@@ -10,10 +10,11 @@
 #clone_dir="stable-diffusion-webui"
 
 # Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
-#export COMMANDLINE_ARGS=""
+# DISABLED - arguments passed directly to webui.sh instead
+export COMMANDLINE_ARGS=""
 
 # python3 executable
-#python_cmd="python3"
+python_cmd="/opt/homebrew/bin/python3.10"
 
 # git executable
 #export GIT="git"
