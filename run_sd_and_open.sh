@@ -22,7 +22,7 @@ fi
 echo "[INFO] Launching Stable Diffusion WebUI on port ${PORT}..."
 
 # Start in background redirecting output to log
-LOG_FILE="$WEBUI_DIR/webui_$(date +%Y%m%d_%H%M%S).log"
+LOG_FILE="/tmp/sd_webui_$(date +%Y%m%d_%H%M%S).log"
 (
   export PATH="/opt/homebrew/bin:$PATH"
   exec ./webui.sh $ARGS >> "$LOG_FILE" 2>&1
